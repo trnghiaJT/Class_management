@@ -5,7 +5,7 @@ from tkinter.ttk import Frame, Style
 import tkinter as tk
 from tkinter import ttk
 import sqlite3
-con = sqlite3.connect("D:\code\SQLprojectt\QuanLiSinhVien1.db")
+con = sqlite3.connect("file/path/database")
 
 cur = con.cursor()
 
@@ -23,7 +23,7 @@ frame.pack(fill=BOTH, expand=True)
 namesystem= Label(frame,text="DANH SÁCH SINH VIÊN  ",width=70, height=1 ,font=("Bernard MT Condensed", 15), fg="navy",bg="orange")
 namesystem.pack()
 
-filename=PhotoImage(file="D:\code\python\Screenshot 2021-10-01 024334.png")
+filename=PhotoImage(file="file/path/background")
 bg_l=Label(frame, image=filename)
 bg_l.place(x=0,y=50)
 window.configure(bg='navy')
